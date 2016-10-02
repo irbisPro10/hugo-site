@@ -1,0 +1,256 @@
+/* override css styles of the main theme here */
+@import url(http://allfont.ru/allfont.css?fonts=montserrat);
+@import url(http://allfont.ru/allfont.css?fonts=montserrat-bold);
+.header .content a, .header .content nav
+{
+	position: relative;
+	float: left;
+}
+.header .content nav
+{
+	font-family: 'Montserrat', arial;
+	font-size: 14px;
+	position: absolute;
+	right:50px; 
+	top: 50px;
+}
+ i:before
+ {
+ 	margin-right: 10px;
+ }
+.header .content nav li
+{
+	color: #abb1c1;
+}
+
+.header .content nav a:hover
+{
+	color: black;
+}
+
+.header .content nav a:active
+{
+	color: black;
+}
+.header .content .header .content nav
+
+.name 
+{
+	position: relative;
+	margin: 25px;
+}
+.content img
+{
+	position: relative;
+	margin-right: 10px;
+	top: 5px;
+}
+
+
+.about 
+{
+	position: relative;
+	float: right;
+}
+
+.gallary img
+{
+	width: 100%;
+	max-width: 250px;
+}
+
+.post-item
+{	
+	font-family: 'Montserrat Bold', arial ;
+	height: 270px;
+	position: relative;
+	float: left;
+}
+
+.post-item p
+{
+	position: relative;
+	color: black !important;
+	float: right;
+	top: 25px;
+	width: 200px;
+}
+
+.post-item li
+{
+	list-style: none;
+}
+
+.post-item img
+{
+	border-radius: 100px;
+}
+
+.markdown p
+{
+	position: relative;
+	margin: auto;
+
+}
+
+.front-matter
+{
+	position: relative;
+	margin-top: 50px;
+}
+
+.markdown ul
+{
+	position: relative;
+	
+}
+
+#categories
+{
+	position: fixed;
+	top: 140px;
+	left: 15px;
+	z-index: 9999;
+}
+
+.category-imgs
+{
+	position: relative;
+	width: 100%
+}
+
+#categories li
+{
+	list-style: none;
+} 
+
+    /* clearfix because of floats */
+    .container:before,
+    .container:after {
+      content: "";
+      display: table;
+    }
+    .container:after {
+      clear: both;
+    }
+    .item {
+      float: left;
+      margin-bottom: 15px;
+    }
+    .item img {
+      max-width: 100%;
+      max-height: 100%;
+      vertical-align: bottom;
+    }
+    .first-item {
+      clear: both;
+    }
+    /* remove margin bottom on last row */
+    .last-row, .last-row ~ .item {
+      margin-bottom: 0;
+    }
+
+    .meta
+    {
+    	visibility: hidden;
+    }
+
+    .contacts
+    {
+    	position: relative;
+    	width: 100%;
+    	display: block;
+    }
+
+    .contacts li
+    {
+    	position: relative;
+    	float: right;
+    	list-style-type: none;
+    	margin-right :  25px;
+    }
+
+    #up
+    {
+    	height: 50px;
+    	width: 50px;
+    	float: right;
+    	position: fixed;
+    	z-index: 9999;
+    	bottom: 50px;
+    	right: 100px;
+    	cursor: pointer;
+    	display: none;
+    }
+
+    .img img
+    {
+    	position: relative;
+    	float: left;
+    	left: 25%;
+    }
+
+    .discription
+    {
+    	position: relative;
+    	float: left;
+    	width: 20%;
+    	left: 30%;
+    }
+
+    #blog-categories
+    {
+    	height: 50px;
+    }
+    #blog-categories li
+    {
+    	list-style-type: none;
+    	position: relative;
+    	float: left;
+    	margin-left: 50px;
+    	cursor: pointer;
+    	display: block;
+    }
+
+@media (max-width: 1366px)
+{
+	#categories
+	{
+		visibility: hidden;
+	}
+}
+@media (max-width: 600px)
+{
+	.header .content nav
+	{
+		position: relative;
+		right: 0px;
+		top:0px;
+	}
+
+	.post-item
+	{
+		height: 350px;
+	}
+	.post-item p
+	{	
+		float: none;
+	}
+
+	.about
+	{
+		float: none;
+
+	}
+	.contacts
+	{
+		visibility: hidden;
+	}
+
+	#up
+	{
+		visibility: hidden;
+	}
+
+}
+
